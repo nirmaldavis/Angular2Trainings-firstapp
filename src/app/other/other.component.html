@@ -1,3 +1,17 @@
 <h1>
   other works!
 </h1>
+
+  <div style="border: 2px solid red; padding: 1rem; marging: 2px;">
+    <h4>Child component with select</h4>
+
+    <div style="border:2px solid orange; padding: 1rem; marging: 2px;">
+      <ng-content select="header" ></ng-content>
+    </div>
+
+    <div style="border:2px solid pink; padding: 1rem; marging: 2px;">
+      <ng-content select=".class-select" ></ng-content>
+    </div>
+  </div>
+
+<p>Other ends here </p>

@@ -8,7 +8,7 @@
 <input type="text" value="{{stringProperty}}" />
 <input type="text" [value]="intProperty" />
 <input type="text" [(ngModel)] ="stringProperty" />
-<button (click)="changeIntProperty()"></button>
+<button (click)="changeIntProperty()">Change Property</button>
 {{stringProperty}}
 <p [ngClass]="{ redBorder: applyStyle(), greyBackground: !applyStyle() }">Is this Styled ?!!</p>
 

@@ -23,6 +23,6 @@ export class DatabindingComponent implements OnInit {
   }
 
   changeIntProperty() {
-    //intProperty = 55;
+    this.intProperty = 55;
   }
 }

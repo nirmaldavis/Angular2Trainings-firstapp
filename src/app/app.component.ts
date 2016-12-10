@@ -12,9 +12,11 @@ import { Component } from '@angular/core';
       </div>
       <footer>Footer content</footer>
       <header> Header Content </header>
-      
+
     </app-other>
     <app-another></app-another>
+    <app-databinding></app-databinding>
+
   `,
   // styleUrls: ['./app.component.css']
   styles: [`

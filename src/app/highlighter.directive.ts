@@ -6,9 +6,11 @@ import { Directive, HostListener, HostBinding, ElementRef, Renderer, Input } fro
 
 export class HighlighterDirective {
 
-  private backgroundColor;
+  private backgroundColor : String;
 
-
+  @HostListener('mouseenter') onMouseEnterEventFunction() {
+    console.log("Mouse Entered ..!!");
+  }
 
   constructor(el: ElementRef, renderer: Renderer) {
 
@@ -16,7 +18,7 @@ export class HighlighterDirective {
 
     // el.nativeElement.style.backgroundColor = "Orange";
 
-     renderer.setElementStyle(el.nativeElement, 'backgroundColor', 'yellow');
+    //  renderer.setElementStyle(el.nativeElement, 'backgroundColor', 'yellow');
   }
 
 }

@@ -18,7 +18,7 @@ export class DatabindingComponent implements OnInit {
   }
 
   applyStyle() {
-    console.log("applyStyle called ..!!!");
+    // console.log("applyStyle called ..!!!");
     return false;
   }
 

@@ -11,6 +11,9 @@ import { HighlighterDirective } from './highlighter.directive';
 import { MathComponent } from './math/math.component';
 import { MathserviceService } from './mathservice.service';
 import { PrefixPipe } from './prefix.pipe';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { routing } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { PrefixPipe } from './prefix.pipe';
     DatabindingComponent,
     HighlighterDirective,
     MathComponent,
-    PrefixPipe
+    PrefixPipe,
+    HomeComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [MathserviceService],
   bootstrap: [AppComponent]

@@ -19,7 +19,19 @@ import { Component } from '@angular/core';
 
     <app-math></app-math>
 
+    <nav>
+      <a [routerLink] ="['/home']" > Home</a>
+      <a [routerLink] ="['/profile']" > Profile</a>
+
+      <div>Outlet</div>
+
+      <router-outlet></router-outlet>
+    </nav>
+
   `,
+
+  //<router-outlet name="myoutlet"></router-outlet>
+
   // styleUrls: ['./app.component.css']
   styles: [`
     h1 {

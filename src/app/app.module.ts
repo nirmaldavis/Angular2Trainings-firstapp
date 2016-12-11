@@ -8,6 +8,8 @@ import { OtherComponent } from './other/other.component';
 import { AnotherComponent } from './another/another.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { HighlighterDirective } from './highlighter.directive';
+import { MathComponent } from './math/math.component';
+import { MathserviceService } from './mathservice.service';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,15 @@ import { HighlighterDirective } from './highlighter.directive';
     OtherComponent,
     AnotherComponent,
     DatabindingComponent,
-    HighlighterDirective
+    HighlighterDirective,
+    MathComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MathserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

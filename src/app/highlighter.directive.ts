@@ -19,6 +19,9 @@ export class HighlighterDirective {
     this.backgroundColor = this.highLightColor;
   }
 
+  //TODO: Need to try
+  // @HostBinding -- 
+
   // constructor(el: ElementRef, renderer: Renderer) {
 
   //   //work any of these

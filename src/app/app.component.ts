@@ -17,6 +17,8 @@ import { Component } from '@angular/core';
     <app-another></app-another>
     <app-databinding></app-databinding>
 
+    <app-math></app-math>
+
   `,
   // styleUrls: ['./app.component.css']
   styles: [`

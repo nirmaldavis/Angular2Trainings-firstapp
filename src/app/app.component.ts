@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   //templateUrl: './app.component.html',
   template: `
-    <h1>Updated Inline template</h1>
+    <h1>Updated Inline template - {{ 'Nirmal' | prefix}}</h1>
     <app-other>
       <section>Section Content</section>
       <div class="class-select">

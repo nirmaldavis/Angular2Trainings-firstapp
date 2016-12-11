@@ -10,6 +10,7 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { HighlighterDirective } from './highlighter.directive';
 import { MathComponent } from './math/math.component';
 import { MathserviceService } from './mathservice.service';
+import { PrefixPipe } from './prefix.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MathserviceService } from './mathservice.service';
     AnotherComponent,
     DatabindingComponent,
     HighlighterDirective,
-    MathComponent
+    MathComponent,
+    PrefixPipe
   ],
   imports: [
     BrowserModule,

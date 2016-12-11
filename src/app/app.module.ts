@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { OtherComponent } from './other/other.component';
 import { AnotherComponent } from './another/another.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { HighlighterDirective } from './highlighter.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     OtherComponent,
     AnotherComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    HighlighterDirective
   ],
   imports: [
     BrowserModule,

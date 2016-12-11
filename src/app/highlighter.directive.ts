@@ -16,11 +16,12 @@ export class HighlighterDirective {
 
   @HostListener('mouseenter') onMouseEnterEventFunction() {
     console.log("Mouse Entered ..!! " + this.highLightColor);
-    this.backgroundColor = this.highLightColor;
+    this.hostBg = this.highLightColor;
   }
 
   //TODO: Need to try
-  // @HostBinding -- 
+  @HostBinding('style.backgroundColor')  hostBg:string;
+
 
   // constructor(el: ElementRef, renderer: Renderer) {
 
